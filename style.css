@@ -1,0 +1,171 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+
+}
+
+.container {
+	width: 100%;
+	min-height: 60rem;
+	background-image: linear-gradient(to right top, #ffffff, #e0daff, #c1b5ff, #a092ff, #7a6eff, #5c7cff, #3987ff, #0091ff, #00b8ff, #00d6f3, #00edbe, #8bfd86);
+	position: relative;
+}
+
+
+.container__form {
+	width: 50rem;
+	margin: 0 auto;
+	padding-top: 25rem;
+	transition: all 1s cubic-bezier(.75,-0.5,0,1.75);
+}
+
+.inp {
+	width: 50rem;
+	height: 5rem;
+	border-style: none;
+	background-color: transparent;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+	font-size: 2rem;
+	color: #e0daff;
+	transition: all .4s;
+}
+
+
+th a {
+	text-decoration: none;
+	color:#e0daff; 
+}
+
+td a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem; 
+}
+
+
+.inp::placeholder {
+	color: white;
+	opacity: .5;
+	transition: all .9s;
+}
+
+.inp:focus {
+	outline: none;
+}
+
+.inp::-webkit-input-placeholder {
+	font-weight: 500;
+	color: white;
+}
+
+.inp:focus::placeholder {
+	opacity: 0;
+}
+
+
+.icon {
+	height: 4rem;
+	width: 4rem;
+	fill: #e0daff;
+	margin: 0 0 -1rem -5rem;
+	cursor: pointer;
+	transition: all .4s;
+}
+
+.icon:hover {
+	transform: translateY(-5px);
+	box-shadow: 2px 2px 2px 2px rgba(0 , 0, 0, .2);
+	border-radius: 1px 10px 1px 10px;
+}
+
+
+.icon:active {
+		transform: translateY(5px);
+}
+
+.table-container {
+width: 80%;
+margin: 0 auto;
+padding-top: 5rem;
+}
+
+table {
+background-image: linear-gradient(60deg, #136a8a, #267871);
+margin-top:2rem;
+padding: 2rem;
+transition: all .4s;
+}
+
+th {
+font-size: 2rem;
+font-family: sans-serif;
+text-align: left;
+
+}
+
+tr {
+
+}
+
+
+td {
+font-size: 2rem;
+color: rgb(0, 0, 0, .9);
+font-family: Monospace;
+}
+
+
+table:hover {
+	transform: translateY(-5px);
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+		<div class="container__form">
+				<form>
+					<input type="text" placeholder="WHAT'S ON YOUR MIND" class="inp">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg.svg#icon-magnifying-glass"></use>
+					</svg>   
+				</form>
+				</div>
+*/
